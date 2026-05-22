@@ -1,25 +1,33 @@
 # Python
 __pycache__/
 *.py[cod]
+*.pyc.*
 *$py.class
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.hypothesis/
+.nox/
+.tox/
 .coverage
+.coverage.*
 htmlcov/
+*.egg-info/
+pip-wheel-metadata/
 
 # Virtual environments and local configuration
 .venv/
 venv/
 env/
+.python-version
 .env
 .env.*
+*.log
 
 # Build and release outputs
 build/
 dist/
 release/
-*.spec
 
 # Editors and OS metadata
 .idea/
@@ -31,3 +39,5 @@ Desktop.ini
 # Superpowers / local worktrees
 .worktrees/
 worktrees/
+
+INNOVATION_IDEAS.md
