@@ -2,6 +2,28 @@
 
 A small Python Windows desktop app for reading and editing Markdown files.
 
+## Download and install
+
+For normal use, download the installer from the MD Reader product page:
+
+```text
+https://clint-ghosn.github.io/md-reader/
+```
+
+The current installer asset is:
+
+```text
+MDReader-v0.1.0-windows-x64-setup-unsigned.exe
+```
+
+Portable builds are also published as:
+
+```text
+MDReader-v0.1.0-windows-x64-unsigned.zip
+```
+
+The installer registers MD Reader as an available Markdown opener for the current Windows user. If Windows keeps another default app for `.md` files, choose MD Reader from **Settings > Apps > Default apps**.
+
 MD Reader can be launched on its own like a text editor. From there, use:
 
 - `File > New` to start a new Markdown file.
@@ -40,6 +62,29 @@ The executable is written to:
 ```text
 dist\MDReader\MDReader.exe
 ```
+
+To package a portable release ZIP:
+
+```powershell
+.\scripts\package-release.ps1
+```
+
+To build the installer after installing Inno Setup 6:
+
+```powershell
+.\scripts\build-installer.ps1
+```
+
+## Verify downloads
+
+After downloading a release asset and `SHA256SUMS.txt`, verify the file hash in PowerShell:
+
+```powershell
+Get-FileHash .\MDReader-v0.1.0-windows-x64-setup-unsigned.exe -Algorithm SHA256
+Get-Content .\SHA256SUMS.txt
+```
+
+The hash printed by `Get-FileHash` should match the line for the downloaded file.
 
 ## Install file association
 

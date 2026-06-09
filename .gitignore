@@ -23,6 +23,7 @@ env/
 .env
 .env.*
 *.log
+.tmp/
 
 # Build and release outputs
 build/
