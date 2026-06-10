@@ -160,14 +160,14 @@ Update `README.md` with:
 After downloading a release asset and `SHA256SUMS.txt`, verify the file hash in PowerShell:
 
 ```powershell
-Get-FileHash .\MDReader-v0.1.0-windows-x64-setup-unsigned.exe -Algorithm SHA256
+Get-FileHash .\MDReader-v0.1.1-windows-x64-setup-unsigned.exe -Algorithm SHA256
 Get-Content .\SHA256SUMS.txt
 ```
 
 The hash printed by `Get-FileHash` should match the line for the downloaded file.
 ````
 
-Use the current version from `pyproject.toml` instead of hardcoding `0.1.0` if the project version has changed.
+Use the current version from `pyproject.toml` instead of hardcoding `0.1.1` if the project version has changed.
 
 ## Step 5: Prepare GitHub Release Metadata
 

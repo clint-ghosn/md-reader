@@ -21,7 +21,7 @@
 Create:
 
 ```text
-docs\launch\qa-report-v0.1.0.md
+docs\launch\qa-report-v0.1.1.md
 ```
 
 Use the actual current version from `pyproject.toml` in the filename.
@@ -29,9 +29,9 @@ Use the actual current version from `pyproject.toml` in the filename.
 Start with:
 
 ```markdown
-# MD Reader v0.1.0 Clean-Machine QA Report
+# MD Reader v0.1.1 Clean-Machine QA Report
 
-**Release tag:** v0.1.0
+**Release tag:** v0.1.1
 **QA date:** 2026-06-08
 **Tester:** Codex
 **Artifacts source:** GitHub Release
@@ -47,12 +47,12 @@ Start with:
 
 | File | SHA256 | Result |
 | --- | --- | --- |
-| MDReader-v0.1.0-windows-x64-setup-unsigned.exe |  | Not started |
-| MDReader-v0.1.0-windows-x64-unsigned.zip |  | Not started |
+| MDReader-v0.1.1-windows-x64-setup-unsigned.exe |  | Not started |
+| MDReader-v0.1.1-windows-x64-unsigned.zip |  | Not started |
 | SHA256SUMS.txt |  | Not started |
 ```
 
-Replace `0.1.0` with the actual version before saving.
+Replace `0.1.1` with the actual version before saving.
 
 ## Step 2: Download Public Release Assets
 

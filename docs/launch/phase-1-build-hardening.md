@@ -210,16 +210,16 @@ Run:
 
 Expected output includes:
 
-- `Release root: ...\release\v0.1.0`
-- `ZIP: ...MDReader-v0.1.0-windows-x64-unsigned.zip`
+- `Release root: ...\release\v0.1.1`
+- `ZIP: ...MDReader-v0.1.1-windows-x64-unsigned.zip`
 - `Checksums: ...SHA256SUMS.txt`
 
 Verify:
 
 ```powershell
-Test-Path release\v0.1.0\MDReader-v0.1.0-windows-x64-unsigned.zip
-Test-Path release\v0.1.0\SHA256SUMS.txt
-Get-Content release\v0.1.0\SHA256SUMS.txt
+Test-Path release\v0.1.1\MDReader-v0.1.1-windows-x64-unsigned.zip
+Test-Path release\v0.1.1\SHA256SUMS.txt
+Get-Content release\v0.1.1\SHA256SUMS.txt
 ```
 
 The checksum file must include at least the ZIP and `MDReader\MDReader.exe`.

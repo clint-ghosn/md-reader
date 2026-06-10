@@ -61,10 +61,10 @@ Use this Inno Setup script as the baseline. Keep the `AppId` value stable after 
 #define MyAppExeName "MDReader.exe"
 #define MyAppInternalName "MDReader"
 #ifndef MyAppVersion
-#define MyAppVersion "0.1.0"
+#define MyAppVersion "0.1.1"
 #endif
 #ifndef MyAppVersionInfo
-#define MyAppVersionInfo "0.1.0.0"
+#define MyAppVersionInfo "0.1.1.0"
 #endif
 
 [Setup]
@@ -235,9 +235,9 @@ Update `README.md` with two install paths:
 ```markdown
 ## Download and install
 
-For normal use, download `MDReader-v0.1.0-windows-x64-setup-unsigned.exe` from the latest GitHub release and run it.
+For normal use, download `MDReader-v0.1.1-windows-x64-setup-unsigned.exe` from the latest GitHub release and run it.
 
-For portable use, download `MDReader-v0.1.0-windows-x64-unsigned.zip`, extract it, and run `MDReader\MDReader.exe`.
+For portable use, download `MDReader-v0.1.1-windows-x64-unsigned.zip`, extract it, and run `MDReader\MDReader.exe`.
 
 The installer registers MD Reader as an available Markdown opener for the current Windows user. If Windows keeps another default app for `.md` files, choose MD Reader from **Settings > Apps > Default apps**.
 ```
@@ -257,9 +257,9 @@ Run:
 Expected artifacts:
 
 ```powershell
-Test-Path release\v0.1.0\MDReader-v0.1.0-windows-x64-setup-unsigned.exe
-Test-Path release\v0.1.0\MDReader-v0.1.0-windows-x64-unsigned.zip
-Test-Path release\v0.1.0\SHA256SUMS.txt
+Test-Path release\v0.1.1\MDReader-v0.1.1-windows-x64-setup-unsigned.exe
+Test-Path release\v0.1.1\MDReader-v0.1.1-windows-x64-unsigned.zip
+Test-Path release\v0.1.1\SHA256SUMS.txt
 ```
 
 All commands must print `True`.

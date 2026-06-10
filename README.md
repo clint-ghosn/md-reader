@@ -13,13 +13,13 @@ https://clint-ghosn.github.io/md-reader/
 The current installer asset is:
 
 ```text
-MDReader-v0.1.0-windows-x64-setup-unsigned.exe
+MDReader-v0.1.1-windows-x64-setup-unsigned.exe
 ```
 
 Portable builds are also published as:
 
 ```text
-MDReader-v0.1.0-windows-x64-unsigned.zip
+MDReader-v0.1.1-windows-x64-unsigned.zip
 ```
 
 The installer registers MD Reader as an available Markdown opener for the current Windows user. If Windows keeps another default app for `.md` files, choose MD Reader from **Settings > Apps > Default apps**.
@@ -80,7 +80,7 @@ To build the installer after installing Inno Setup 6:
 After downloading a release asset and `SHA256SUMS.txt`, verify the file hash in PowerShell:
 
 ```powershell
-Get-FileHash .\MDReader-v0.1.0-windows-x64-setup-unsigned.exe -Algorithm SHA256
+Get-FileHash .\MDReader-v0.1.1-windows-x64-setup-unsigned.exe -Algorithm SHA256
 Get-Content .\SHA256SUMS.txt
 ```
 
