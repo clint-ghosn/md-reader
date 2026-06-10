@@ -21,6 +21,7 @@ $packageName = "$Name-v$Version-windows-x64"
 $staging = Join-Path $releaseRoot $packageName
 $zipPath = Join-Path $releaseRoot "$packageName-unsigned.zip"
 $checksumsPath = Join-Path $releaseRoot "SHA256SUMS.txt"
+$installerPath = Join-Path $releaseRoot "$Name-v$Version-windows-x64-setup-unsigned.exe"
 $distApp = Join-Path $Root "dist\$Name"
 $distExe = Join-Path $distApp "$Name.exe"
 
@@ -96,6 +97,7 @@ function Get-RelativeToRelease([string]$Path) {
 
 $hashTargets = @(
     $zipPath,
+    $installerPath,
     (Join-Path $staging "$Name\$Name.exe"),
     (Join-Path $staging "install.ps1"),
     (Join-Path $staging "uninstall.ps1")
