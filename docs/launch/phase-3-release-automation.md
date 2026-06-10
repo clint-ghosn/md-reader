@@ -96,7 +96,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Release version without leading v, for example 0.1.0"
+        description: "Release version without leading v, for example 0.1.1"
         required: true
         type: string
 

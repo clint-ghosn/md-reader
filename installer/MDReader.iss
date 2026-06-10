@@ -2,10 +2,10 @@
 #define MyAppPublisher "MD Reader"
 #define MyAppExeName "MDReader.exe"
 #ifndef MyAppVersion
-#define MyAppVersion "0.1.0"
+#define MyAppVersion "0.1.1"
 #endif
 #ifndef MyAppVersionInfo
-#define MyAppVersionInfo "0.1.0.0"
+#define MyAppVersionInfo "0.1.1.0"
 #endif
 
 [Setup]
